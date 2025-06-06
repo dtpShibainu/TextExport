@@ -31,7 +31,6 @@ for (var i = 0; i < doc.pages.length; i++) {
             }
         }
     }
-
     // Y座標で降順ソート（上から下へ）
     // Y座標が同じ場合はX座標で降順ソート（右から左へ）
     pageStories.sort(function(a, b) {
@@ -66,7 +65,6 @@ for (var i = 0; i < doc.pages.length; i++) {
         var storyContent = finalSortedStories[k].story.contents;
         var tableContent = "";
         
-        // テーブルが含まれる場合の処理
         var tables = finalSortedStories[k].story.tables.everyItem().getElements();
         if (tables.length > 0) {
             for (var t = 0; t < tables.length; t++) {
